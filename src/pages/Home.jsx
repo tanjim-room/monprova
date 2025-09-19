@@ -4,9 +4,11 @@ import Hero from '../components/Hero';
 import Navbar from '../components/Navbar';
 const Home = () => {
     return (
-        <div className='flex justify-center items-center'>
+        <div className=''>
             {/* <Navbar></Navbar> */}
+            
             <Hero></Hero>
+            
         </div>
     );
 };

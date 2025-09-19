@@ -2,13 +2,13 @@ import React from 'react';
 import { createBrowserRouter } from 'react-router-dom';
 import MainLayout from '../layouts/MainLayout';
 import Home from '../pages/Home';
-import Dashboard from '../pages/Dashboard';
-import Product from '../pages/Product';
-import Profile from '../pages/Profile';
-import Details from '../pages/Details';
-import Login from '../pages/Login';
-import Register from '../pages/Register';
-import PrivateRoute from '../PrivateRoute';
+
+import PatientLogin from '../pages/PatientLogin';
+import PatientRegister from '../pages/PatientRegister';
+import DoctorLogin from '../pages/DoctorLogin';
+import DoctorRegister from '../pages/DoctorRegister';
+import PatientDashboard from '../pages/PatientDashboard';
+
 
 
 const routes = createBrowserRouter([
@@ -19,8 +19,30 @@ const routes = createBrowserRouter([
             {
                 path: "/",
                 element: <Home></Home>,
+
                 
             },
+            {
+                path: "/patientLogin",
+                element: <PatientLogin></PatientLogin>,
+            },
+             {
+                path: "/doctorLogin",
+                element: <DoctorLogin></DoctorLogin>,
+            },
+             {
+                path: "/patientRegister",
+                element: <PatientRegister></PatientRegister>,
+            },
+            {
+                path: "/doctorRegister",
+                element: <DoctorRegister></DoctorRegister>,
+            },
+            {
+                path: "/patientDashboard",
+                element: <PatientDashboard></PatientDashboard>,
+            },
+
 
         ]
     }

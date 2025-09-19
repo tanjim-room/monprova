@@ -1,9 +1,11 @@
 import React from 'react';
-import Home from '../pages/Home';
+
+import { Outlet } from "react-router-dom";
+
 const MainLayout = () => {
     return (
-        <div className='max-w-screen mx-auto'>
-            <Home></Home>
+        <div className='max-w-screen mx-auto font-nato'>
+            <Outlet></Outlet>
         </div>
     );
 };
