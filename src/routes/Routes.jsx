@@ -8,6 +8,10 @@ import PatientRegister from '../pages/PatientRegister';
 import DoctorLogin from '../pages/DoctorLogin';
 import DoctorRegister from '../pages/DoctorRegister';
 import PatientDashboard from '../pages/PatientDashboard';
+import Section from '../components/Section';
+import Appoinment from '../pages/Appoinment';
+import DoctorList from '../pages/DoctorList';
+import Assessment from '../pages/Assessment';
 
 
 
@@ -41,6 +45,24 @@ const routes = createBrowserRouter([
             {
                 path: "/patientDashboard",
                 element: <PatientDashboard></PatientDashboard>,
+                children: [
+                    {
+                        path: "/patientDashboard",
+                        element: <Section></Section>
+                    },
+                    {
+                        path: "appoinments",
+                        element: <Appoinment></Appoinment>,
+                    },
+                    {
+                        path: "doctorList",
+                        element: <DoctorList></DoctorList>,
+                    },
+                    {
+                        path: "assessments",
+                        element: <Assessment></Assessment>,
+                    },
+                ],
             },
 
 

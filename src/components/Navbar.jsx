@@ -1,9 +1,10 @@
 import React from 'react';
-import logo from '../assets/Monprova Logo.png'
+import logo from '../assets/monprova logo2.png'
+import { NavLink } from 'react-router-dom';
 
 const Navbar = () => {
     return (
-        <div className="navbar justify-center items-center bg-purple-200 shadow-sm py-4">
+       <div className="navbar justify-center items-center  shadow-sm py-4">
             <div className='flex justify-center items-center gap-2'>
                 <div>
                     <img src={logo} alt="" className='w-16 h-16' />
